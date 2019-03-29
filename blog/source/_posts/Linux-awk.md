@@ -10,9 +10,11 @@ tags: Linux
 [root@bogon ~]# docker ps -a
 ```
 
-![1553870358243](C:\Users\zhanhy2\AppData\Roaming\Typora\typora-user-images\1553870358243.png)
+
 
 一个个删总觉得太麻烦，所以就想用`shell`脚本去批量处理！
+
+
 
 
 
@@ -24,11 +26,15 @@ tags: Linux
 [root@bogon ~]# docker ps -a | awk '{print $1}'
 ```
 
+
+
 `$1` 代表了取第一列, 但是这样抓出来的第一列是包含了第一行的 title 的，因此要添加参数：
 
 ```
 [root@bogon ~]# docker ps -a | awk 'NR>1 {print $1}'
 ```
+
+
 
 `NR > 1` 是一个判断条件，指当行数大于 1 的时候才运行 `awk` 的命令并打印出结果，接着用 `for` 命令批量的删除：
 
@@ -39,7 +45,11 @@ tags: Linux
 > done
 ```
 
+
+
 在使用 `for` 的时候需要注意一下，将长命令括起来的不是单引号，而是一个重音符 "  `  "，作为小白的我就踩坑了。。。
+
+
 
 
 
@@ -54,6 +64,8 @@ tags: Linux
 ```
 [root@bogon ~]# docker ps -a | awk '{print $7}'
 ```
+
+
 
 但是！`awk` 是默认用空格来进行分列的，于是就出现了这种情况：
 
@@ -72,6 +84,8 @@ Exited
 21
 ```
 
+
+
 这完全不是我要的，原来是应为`docker ps -a ` 输出的结果里面有很多空格，用命令看看没一行有多少列：
 
 ```
@@ -89,11 +103,15 @@ Exited
 15
 ```
 
+
+
 因此没办法直接用数字指出最后一列，当中想过给 `awk` 设置指定数量的空格作为分割符，最后因为之间的空格并不相等，所以告吹，最后用谷歌翻了不少别人的 Blog，终于找到了取出最后一列的方式：
 
 ```
 [root@bogon nginx]# docker ps -a | awk '{print $NF}'
 ```
+
+
 
  是的，没错，就是 `$NF` ，最后命令：
 
