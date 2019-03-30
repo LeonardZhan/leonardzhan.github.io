@@ -337,7 +337,7 @@
                 
               
 
-              <time title="Erstellt: 2019-03-30 12:35:08 / Geändert am: 13:34:26" itemprop="dateCreated datePublished" datetime="2019-03-30T12:35:08+08:00">2019-03-30</time>
+              <time title="Erstellt: 2019-03-30 12:35:08 / Geändert am: 13:37:32" itemprop="dateCreated datePublished" datetime="2019-03-30T12:35:08+08:00">2019-03-30</time>
             
 
             
@@ -380,7 +380,7 @@
           
             <p>在学习 <code>docker</code> 的时候创建了不少 <code>container</code> ：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@bogon ~]# docker ps -a</span><br></pre></td></tr></table></figure>
-<p><img src="2019/03/30/Linux-awk/docker.png" alt="docker"></p>
+<p><img src="docker.png" alt="docker"></p>
 <p>一个个删总觉得太麻烦，所以就想用<code>shell</code>脚本去批量处理！</p>
 <h3 id="方法一：取出第一列的-CONTAINER-ID"><a href="#方法一：取出第一列的-CONTAINER-ID" class="headerlink" title="方法一：取出第一列的 CONTAINER ID"></a>方法一：取出第一列的 <code>CONTAINER ID</code></h3><p>一番 Google 之后，找到了 Linux  的一个取列的命令 <code>awk</code> :</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@bogon ~]# docker ps -a | awk &apos;&#123;print $1&#125;&apos;</span><br></pre></td></tr></table></figure>
