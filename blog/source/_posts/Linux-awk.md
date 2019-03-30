@@ -1,6 +1,6 @@
 ---
-title: Linux awk 取回输出的最后一列
-date: 2019-03-29 21:56:54
+title: Linux awk
+date: 2019-03-30 12:35:08
 tags: Linux
 ---
 
@@ -10,7 +10,7 @@ tags: Linux
 [root@bogon ~]# docker ps -a
 ```
 
-
+![docker](Linux-awk/docker.png)
 
 一个个删总觉得太麻烦，所以就想用`shell`脚本去批量处理！
 
