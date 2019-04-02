@@ -195,7 +195,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -223,7 +223,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
 
   </li>
         
@@ -240,7 +240,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
 
   </li>
 
@@ -330,19 +330,31 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
 
               
                 
               
 
-              <time title="Erstellt: 2019-03-30 12:35:08 / Geändert am: 13:37:32" itemprop="dateCreated datePublished" datetime="2019-03-30T12:35:08+08:00">2019-03-30</time>
+              <time title="Created: 2019-03-30 12:35:08" itemprop="dateCreated datePublished" datetime="2019-03-30T12:35:08+08:00">2019-03-30</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-04-02 15:50:04" itemprop="dateModified" datetime="2019-04-02T15:50:04+08:00">2019-04-02</time>
               
             
           </span>
@@ -380,7 +392,7 @@
           
             <p>在学习 <code>docker</code> 的时候创建了不少 <code>container</code> ：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@bogon ~]# docker ps -a</span><br></pre></td></tr></table></figure>
-<p><img src="docker.png" alt="docker"></p>
+<p><img src="Linux-awk/docker.png" alt="docker"></p>
 <p>一个个删总觉得太麻烦，所以就想用<code>shell</code>脚本去批量处理！</p>
 <h3 id="方法一：取出第一列的-CONTAINER-ID"><a href="#方法一：取出第一列的-CONTAINER-ID" class="headerlink" title="方法一：取出第一列的 CONTAINER ID"></a>方法一：取出第一列的 <code>CONTAINER ID</code></h3><p>一番 Google 之后，找到了 Linux  的一个取列的命令 <code>awk</code> :</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@bogon ~]# docker ps -a | awk &apos;&#123;print $1&#125;&apos;</span><br></pre></td></tr></table></figure>
@@ -494,14 +506,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
 
               
                 
               
 
-              <time title="Erstellt: 2019-03-23 17:02:58" itemprop="dateCreated datePublished" datetime="2019-03-23T17:02:58+08:00">2019-03-23</time>
+              <time title="Created: 2019-03-23 17:02:58" itemprop="dateCreated datePublished" datetime="2019-03-23T17:02:58+08:00">2019-03-23</time>
             
 
             
@@ -516,9 +528,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Geändert am: 2019-03-29 21:57:24" itemprop="dateModified" datetime="2019-03-29T21:57:24+08:00">2019-03-29</time>
+                <time title="Modified: 2019-03-29 21:57:24" itemprop="dateModified" datetime="2019-03-29T21:57:24+08:00">2019-03-29</time>
               
             
           </span>
@@ -650,14 +662,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
 
               
                 
               
 
-              <time title="Erstellt: 2019-03-23 16:58:58" itemprop="dateCreated datePublished" datetime="2019-03-23T16:58:58+08:00">2019-03-23</time>
+              <time title="Created: 2019-03-23 16:58:58" itemprop="dateCreated datePublished" datetime="2019-03-23T16:58:58+08:00">2019-03-23</time>
             
 
             
@@ -672,9 +684,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Geändert am: 2019-03-29 22:07:24" itemprop="dateModified" datetime="2019-03-29T22:07:24+08:00">2019-03-29</time>
+                <time title="Modified: 2019-03-29 22:07:24" itemprop="dateModified" datetime="2019-03-29T22:07:24+08:00">2019-03-29</time>
               
             
           </span>
@@ -803,7 +815,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">3</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -820,7 +832,7 @@
                       
                     
                     <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">schlagwörter</span>
+                    <span class="site-state-item-name">tags</span>
                   
                 </div>
               
@@ -873,7 +885,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
 
 
 
@@ -881,7 +893,7 @@
 
 
 
-  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.0.1</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.0.1</div>
 
 
 
